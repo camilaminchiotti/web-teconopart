@@ -50,7 +50,7 @@ padding:0;
 
 
 body{
-    background: linear-gradient(#F0F8FF, #c0d0df );
+    /* background: linear-gradient(#F0F8FF, #c0d0df ); */
     font-family:'Barlow Condensado', sans-serif;
 
    /* borrar pq va en los media queri? */
@@ -281,9 +281,9 @@ label, input{
         list-style: none;
         position: relative;
         top: 0px;}
-
+/* 
         a{  transition: font-weight 0,4s;}
-        a:hover{  font-weight: 800; }
+        a:hover{  font-weight: 800; } */
 
     .empresa{
         display: grid;
