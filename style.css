@@ -1,0 +1,422 @@
+
+  {
+    margin:0;
+padding:0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2? family=Barlow+Condensado:ital,wght@0,400;1,500&display=swap');
+ nav{ 
+    background-color: #b3c6f0;
+     padding: 10px 90px 10px 90px;
+     /* position:fixed;
+    top:0px;
+    right:0px;
+    left:0px;  */
+
+   /* borrar pq va en los media queri? */
+
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;  */
+}
+  nav li{
+        padding: 20px;
+
+         /* borrar pq va en los media queri? */
+
+      /* display: flex;
+      flex-direction: row;
+     align-items: center;
+     text-decoration: none; */
+}
+
+ nav ul{
+      text-align: right; 
+
+   /* borrar pq va en los media queri? */
+
+      /* display: flex;
+      flex-direction: row; */
+}
+
+
+ a{ font-weight:600;
+    text-decoration: none;
+    color:rgb(52, 63, 86);
+    list-style: none;
+}
+
+
+
+body{
+    background: linear-gradient(#F0F8FF, #c0d0df );
+    font-family:'Barlow Condensado', sans-serif;
+
+   /* borrar pq va en los media queri? */
+
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.tituloprincipal{
+    font-weight: 700;
+    font-size: 50px;
+    color:rgb(52, 63, 86);
+    text-align: center;
+    background-image:url(imagenes/header4.jpg);
+    padding: 100px;
+    margin:150px 50px 350px 50px ;
+}
+
+/* nosotros (grids) */ 
+
+   /* borrar pq va en los media queri? */
+
+/* .empresa{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: "imgempresa tituloempresa" "imgempresa textoempresa";
+justify-content:;
+  ;
+}
+
+.imgempresa{ grid-area: imgempresa;}
+.tituloempresa{grid-area:tituloempresa;}
+.textoempresa{grid-area: textoempresa;}*/
+
+.caracteristicasempresa{
+    margin-top: 130px;
+    /* display: grid; */
+
+   /* borrar pq va en los media queri? */
+
+   /* grid-template-columns: repeat(3,300px);
+    grid-template-rows: 30% 10% 60%;
+    justify-content: center;
+    justify-items: center;
+  }*/
+}
+
+ .empresa{margin-top: 200px;}
+ .imgempresa{
+    margin-left: 200px; 
+}
+.tituloempresa{
+    color:rgb(52, 63, 86);  
+}
+ .descripcionEmpresa{
+    padding-left: 30px;
+	padding-right: 30px;
+    width: 400px; 
+} 
+
+.iconos{
+    margin-top: 40px;
+   padding-bottom: 10px;
+}
+
+.textoscaracteristicas{
+    text-align: center;
+    width: 150px;
+    margin-top: 20px;
+}
+.nombresiconos{
+    padding-bottom: 10px;
+    color:rgb(52, 63, 86); 
+} 
+
+.contacto{
+padding-left: 200px;
+padding-top: 0px;
+}
+
+
+footer{
+    color:rgb(52, 63, 86);
+    background-color: #b3c6f0;
+    padding:10px ;
+    margin-top: 20px;
+     /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 800px 10px 90px;  */
+}
+
+.tituloempresa{font-family:'Barlow Condensado', sans-serif;
+    color:rgb(52, 63, 86);}
+
+section{
+        margin: 40px 20px 20px 20px ;
+    }
+
+
+
+.tituloproductos
+{ 
+font-weight: 700;
+    padding: 40px ;
+} 
+
+
+.tituloservicios,
+.titulocontactanos{
+    color:rgb(52, 63, 86);
+    text-align: left;
+    font-size: 30px;
+    margin-top: 40px;
+    font-weight: 700;
+    }
+
+.imgProductoslinea1,
+.imgProductoslinea2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    }
+
+.imgProductoslinea1{
+   margin-top: 50px;
+   margin-bottom: 20px;
+    }
+
+.imgProductoslinea2{ margin-bottom: 30px;}
+.marcas{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+
+.servicios{
+    margin-top: 200px;
+    margin-left: 50px;
+     }
+
+ .listadeservicios{
+     margin-bottom: 200px;
+     }
+
+.listadeservicios li{
+     padding-top: 40px;
+     padding-bottom: 40px;
+     }
+      
+.tituloservicios{
+    padding-bottom: 50px;
+}
+    
+.tituloservicios li{
+    padding-bottom: 100px;
+     }
+
+.contacto{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+}
+
+.contactanos{
+    width: 400px;
+}
+
+.contactanos div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:baseline;
+}
+
+legend{
+    text-align: center;
+    font-weight: 700;
+}
+
+fieldset{
+    background-color:#b3c6f0;
+    height: 700px;
+    width: 400px;
+}
+
+label, input{
+    height: 30px;
+    width: 400px;
+    margin: 30px 30px 30px 30px;
+}
+
+
+    /* MEDIA QUERIS */
+
+
+@media screen and (min-width: 1200px){
+  body{
+      display: flex;
+      flex-direction: column;
+  }
+    nav{
+        display: flex;
+        flex-direction: row;
+        position:fixed;
+        top:0px;
+        right:0px;
+        left:0px
+    }
+    
+    ul{ text-align: right;
+        display: flex;
+        flex-direction: row;
+    }
+    
+   
+    
+     a{
+        font-family:'Barlow Condensado', sans-serif;
+        font-weight:600;
+        text-decoration: none;
+        color:rgb(52, 63, 86);
+        list-style: none;
+        position: relative;
+        top: 0px;}
+
+        a{  transition: font-weight 0,4s;}
+        a:hover{  font-weight: 800; }
+
+    .empresa{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20% 80%;
+        grid-template-areas: "imgempresa tituloempresa" "imgempresa textoempresa";
+      }
+    
+    .imgempresa{ grid-area: imgempresa;}
+    .tituloempresa{grid-area:tituloempresa;}
+    .textoempresa{grid-area: textoempresa;}
+    
+    .caracteristicasempresa{
+        display: grid;
+        grid-template-columns: repeat(3,300px);
+        grid-template-rows: 30% 10% 60%;
+        justify-content: center;
+        justify-items: center;
+        grid-template-areas: " iconoexperiencia iconocalidad iconovariedad"
+        " tituloexperiencia titulocalidad titulovariedad "
+        "textoexperiencia textocalidad textovariedad";
+    }
+    .iconoexperiencia{grid-area: iconoexperiencia;}
+    .iconocalidad{grid-area:iconocalidad ; }
+    .iconovariedad{grid-area:iconovariedad ;}
+    .tituloexperiencia{
+        grid-area:tituloexperiencia ;
+    margin: 20px 0px 20px 0px;}
+    .titulocalidad{grid-area:titulocalidad ;
+        margin: 20px 0px 20px 0px;}
+    .titulovariedad{grid-area:titulovariedad ;
+        margin: 20px 0px 20px 0px;}
+.textoexperiencia{grid-area:textoexperiencia ;}
+.textocalidad{grid-area:textocalidad ;}
+.textovariedad{grid-area:textovariedad ;}
+
+
+
+  .empresa{
+        margin-top:200px;
+    }
+
+.imgempresa{
+   margin-left: 200px; 
+}
+
+.iconos{
+   margin-top: 40px;
+  padding-bottom: 10px;
+
+}
+
+.textoscaracteristicas{
+   text-align: center;
+   width: 150px;
+   margin-top: 20px;
+}
+.nombresiconos{
+   padding-bottom: 10px;
+   color:rgb(52, 63, 86);    
+} 
+
+footer{
+     color:rgb(52, 63, 86);
+    background-color: #b3c6f0;
+    padding:10px ;
+    margin-top: 20px; 
+      display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 800px 10px 90px;
+}
+}
+
+ @media screen and (min-width:320px) and (max-width:1199px) {
+
+    footer{
+        color:rgb(52, 63, 86);
+       background-color: #b3c6f0;
+       padding:10px ;
+       margin-top: 20px; 
+         display: flex;
+       flex-direction: row;
+       justify-content: center;
+   }
+  .logoFooter{ margin-right: 50px;}
+       
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloprincipal{
+    margin-top: 300px;
+}
+nav{
+    display: flex;
+    position:fixed;
+    top:0px;
+    right:0px;
+    left:0px;
+    height: 200px;
+}
+
+ul li a { display: none;}
+
+.empresa{
+ margin-top: 250px;
+
+}
+
+.caracteristicasempresa{ 
+    text-align: center;
+ 
+}
+.imgempresa{
+    height: 400px;
+    width: 600px;
+}
+
+.iconocalidad,
+.iconoexperiencia,
+.iconovariedad{
+    height: 100px;
+    width: 100px;
+}
+
+
+.titulocalidad,
+.titulovariedad,
+.tituloexperiencia{
+    color: rgb(52, 63, 86);
+}
+
+
+ }
