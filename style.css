@@ -282,8 +282,7 @@ label, input{
         position: relative;
         top: 0px;}
 
-        a{  transition: font-weight 0,4s;}
-        a:hover{  font-weight: 800; } 
+       
 
     .empresa{
         display: grid;
