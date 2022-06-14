@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2? family=Barlow+Condensado:ital,wght@0,400;1,500&display=swap");
+* {
+margin: 0;
+    padding: 0;
+}
+
+nav {
+background-color: #ffff;
+    
+}
+
+nav li {
+padding: 20px;
+}
+
+
+#titulo {
+/* margin-top: 100px; */
+    font-family: 'Barlow Condensado', sans-serif;
+    font-weight: bold;
+}
+
+
+
+body {
+background: linear-gradient(#F0F8FF, #c0d0df);
+    font-family: 'Barlow Condensado', sans-serif;
+}
+ .empresa {
+    margin-top: 200px;
+}
+
+
+.tituloempresa {
+color: #343f56;
+}
+
+
+.iconos {
+margin-top: 40px;
+    padding-bottom: 10px;
+}
+
+/* .s */
+
+.nombresiconos {
+padding-bottom: 10px;
+color: #343f56;
+}
+
+
+.contacto {
+padding-left: 200px;
+    padding-top: 0px;
+}
+
+footer {
+color: #343f56;
+    padding: 10px;
+    background-color: #ffff;
+    margin-top: 20px;
+}
+
+.tituloempresa {
+font-family: 'Barlow Condensado', sans-serif;
+color: #343f56;
+}
+
+
+.tituloproductos {
+font-weight: 700;
+    padding: 40px;
+}
+
+.tituloservicios,
+.titulocontactanos {
+color: #343f56;
+    text-align: left;
+    font-size: 30px;
+    margin-top: 40px;
+    font-weight: 700;
+}
+
+.imgProductoslinea1,
+.imgProductoslinea2 {
+display: -webkit-box;
+    display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+-webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+            text-align: center;
+}
+
+.imgProductoslinea1 {
+margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.imgProductoslinea2 {
+margin-bottom: 30px;
+}
+
+.marcas {
+padding-top: 50px;
+display: -webkit-box;
+    display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+-webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+}
+
+.servicios {
+margin-top: 200px;
+    margin-left: 50px;
+}
+
+.listadeservicios {
+margin-bottom: 200px;
+}
+
+.listadeservicios li {
+padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.tituloservicios {
+padding-bottom: 50px;
+}
+
+.tituloservicios li {
+padding-bottom: 100px;
+}
+
+.contacto {
+margin-top: 200px;
+display: -webkit-box;
+    display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+}
+
+.contactanos {
+width: 400px;
+}
+
+.contactanos div {
+display: -webkit-box;
+    display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+-webkit-box-pack: start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+-webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+        align-items: baseline;
+}
+
+legend {
+text-align: center;
+    font-weight: 700;
+}
+
+fieldset {
+background-color: #b3c6f0;
+    height: 700px;
+    width: 400px;
+}
+
+label,
+input {
+height: 30px;
+    width: 400px;
+    margin: 30px 30px 30px 30px;
+}
+
+.empresa {
+    margin-top: 150px;
+    margin-bottom: 80px;
+
+}
+
+/* MEDIA QUERIS */
+@media screen and (min-width: 320px) and (max-width:1199px) {
+    #titulo {
+        margin-top: 12rem;
+    }
+    
+                                                                footer {
+                                                                    font-size: 15px;
+                                                                }
+                                                                }
+ @media screen and (min-width: 1200px) {
+                ul li a {
+                        font-family: 'Barlow Condensado', sans-serif;
+                        font-weight: 600;
+        color: #343f56;
+        }
+                #titulo {
+                    font-size: 3rem;
+                    margin-top: 12rem;
+                    margin-left: 9rem;
+                    margin-right: 9rem;
+        
+                }
+        
+                #card {
+                    margin-top: 8rem;
+                }
+a {
+    transition: font-weight 0, 5s;
+}
+a:hover {
+    font-weight: 800;
+}
+
+.empresa {
+    margin-top: 200px;
+    margin-bottom: 80px;
+    margin-left: 12rem;
+}
+
+.imgempresa {
+    height: 50%;
+    width: 50%;
+}
+
+.iconos {
+    margin-top: 40px;
+    padding-bottom: 10px;
+}
+
+.textoscaracteristicas {
+    text-align: center;
+    margin-top: 20px;
+}
+.nombresiconos {
+    padding-bottom: 10px;
+    color: #343f56;
+    }
+  footer {
+    color: #343f56;
+        background-color: #ffff;
+        padding: 10px;
+        margin-top: 20px;
+    }
+}
+/*# sourceMappingURL=style.css.map */
