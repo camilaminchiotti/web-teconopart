@@ -1,89 +1,52 @@
+
+@import url("https://fonts.googleapis.com/css2? family=Barlow+Condensado:ital,wght@0,400;1,500&display=swap");
+
+@import"colores";
 * {
     margin: 0;
     padding: 0;
 }
 
-
-@import url('https://fonts.googleapis.com/css2? family=Barlow+Condensado:ital,wght@0,400;1,500&display=swap');
-
 nav {
     background-color: #ffff;
-    /* padding: 10px 90px 10px 90px; */
-}
 
-nav li {
+
+
+ li {
     padding: 20px;
 }
-
-
-nav ul {
-    text-align: right;
+ 
 
 }
+
 
 #titulo {
-    margin-top: 100px;
-}
-
-a {
-    font-weight: 600;
-    text-decoration: none;
-    color: rgb(52, 63, 86);
-    list-style: none;
+   
+    font-family: 'Barlow Condensado', sans-serif;
+    font-weight: bold;
+    color: $colorprimario;
 }
 
 
 
 body {
-    background: linear-gradient(#F0F8FF, #c0d0df);
+    background-color:#ffffafc8;
     font-family: 'Barlow Condensado', sans-serif;
-
-
 }
-
-/* .tituloprincipal {
-    font-weight: 700;
-    font-size: 50px;
-        color: rgb(52, 63, 86);
-        text-align: center;
-        background-image: url(imagenes/header4.jpg);
-    padding: 100px;
-    margin: 150px 50px 350px 50px;
-}
-
-*/
 .empresa {
-    margin-top: 200px;
-}
+    margin-top: 150px;
+    margin-bottom: 80px;
 
-.imgempresa {
-    /* margin-left: 50px; */
 }
-
+h3{
+    color: $colorprimario
+}
 .tituloempresa {
-    color: rgb(52, 63, 86);
+    color: $colorprimario;
 }
 
-.descripcionEmpresa {
-    /* padding-left: 30px;
-    padding-right: 30px; */
-    /* width: 400px; */
-}
-
-.iconos {
-    margin-top: 40px;
-    padding-bottom: 10px;
-}
-
-.textoscaracteristicas {
-    text-align: center;
-    /* width: 100px; */
-    margin-top: 20px;
-}
-
-.nombresiconos {
-    padding-bottom: 10px;
-    color: rgb(52, 63, 86);
+.caracteristicas {
+    width: 14rem;
 }
 
 .contacto {
@@ -91,9 +54,8 @@ body {
     padding-top: 0px;
 }
 
-
 footer {
-    color: rgb(52, 63, 86);
+    color: $colorprimario;
     padding: 10px;
     background-color: #ffff;
     margin-top: 20px;
@@ -101,13 +63,8 @@ footer {
 
 .tituloempresa {
     font-family: 'Barlow Condensado', sans-serif;
-    color: rgb(52, 63, 86);
+    color: $colorprimario;
 }
-
-section {
-    /* margin: 40px 20px 20px 20px; */
-}
-
 
 
 .tituloproductos {
@@ -115,10 +72,9 @@ section {
     padding: 40px;
 }
 
-
 .tituloservicios,
 .titulocontactanos {
-    color: rgb(52, 63, 86);
+    color: $colorprimario;
     text-align: left;
     font-size: 30px;
     margin-top: 40px;
@@ -127,8 +83,15 @@ section {
 
 .imgProductoslinea1,
 .imgProductoslinea2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
     text-align: center;
 }
@@ -144,8 +107,15 @@ section {
 
 .marcas {
     padding-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
 }
 
@@ -173,20 +143,36 @@ section {
 
 .contacto {
     margin-top: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .contactanos {
     width: 400px;
-}
-
-.contactanos div {
+    
+    div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
     align-items: baseline;
+}
 }
 
 legend {
@@ -207,73 +193,99 @@ input {
     margin: 30px 30px 30px 30px;
 }
 
-.empresa {
-    /* margin-left: 250px; */
-    margin-top: 150px;
-    margin-bottom: 80px;
-    /* height: 200px;
-    width: 1000px; */
-}
 
 /* MEDIA QUERIS */
+@media screen and (min-width: 320px) and (max-width:1199px) {
+    #card {
+        margin-top: 130px;
+    }
+
+    #titulo {
+        font-size: large;
+        color: $colorprimario;
+    }
+
+     .logoFooter {
+      width:50%;
+      height: auto;
+     
+      
+ }
+ .nav-link{
+    color:$colorprimario;
+    font-weight: 550;
+}
+
+    footer {
+        font-size: 15px;
+    }
+}
 
 @media screen and (min-width: 1200px) {
-    ul {
-        text-align: right;
-    }
-
-    a {
+    ul li a {
         font-family: 'Barlow Condensado', sans-serif;
-        font-weight: 600;
-        text-decoration: none;
-        color: rgb(52, 63, 86);
-        list-style: none;
+    
+      
     }
 
-    a {
+    #titulo {
+        font-size: 3rem;
+        margin-top: 12rem;
+        margin-left: 9rem;
+        margin-right: 9rem;
+
+    }
+
+    #card {
+        margin-top: 8rem;
+    }
+
+
+  .nav-link, .btn {
+         color:$colorprimario;
+         font-weight: 450;
         transition: font-weight 0, 5s;
+        
+        &:hover {
+         
+            font-weight: 700;
+        }
     }
-
-    a:hover {
-        font-weight: 800;
-    }
-
+        
     .empresa {
-        /* margin-left: 250px; */
         margin-top: 200px;
-        margin-bottom: 80px;
-        /* height: 200px;
-    width: 1000px; */
+        margin-bottom: 60px;
+        margin-left: 12rem;
     }
 
     .imgempresa {
-        /* margin-left: 100px; */
-        height: 50%;
-        width: 50%;
+        height: auto;
+        width:60%;
     }
 
     .iconos {
-        margin-top: 40px;
+  
         padding-bottom: 10px;
     }
 
-
     .textoscaracteristicas {
         text-align: center;
-        /* width: 150px; */
         margin-top: 20px;
-
+        margin-bottom: 20px;
+      
     }
 
     .nombresiconos {
         padding-bottom: 10px;
-        color: rgb(52, 63, 86);
+        color: $colorprimario;
     }
 
     footer {
-        color: rgb(52, 63, 86);
+        color:$colorprimario;
         background-color: #ffff;
         padding: 10px;
         margin-top: 20px;
     }
 }
+
+/*# sourceMappingURL=style.css.map */
