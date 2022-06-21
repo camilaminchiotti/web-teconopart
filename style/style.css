@@ -8,6 +8,11 @@ nav {
   background-color: #ffff;
 }
 
+nav .logoNav {
+  height: 50%;
+  width: 50%;
+}
+
 nav li {
   padding: 20px;
 }
@@ -19,7 +24,7 @@ nav li {
 }
 
 body {
-  background-color: #ffffafc8;
+  background-color: #EAF2E1;
   font-family: 'Barlow Condensado', sans-serif;
 }
 
@@ -40,9 +45,12 @@ h3 {
   width: 14rem;
 }
 
+.producto {
+  padding: 1rem;
+}
+
 .contacto {
-  padding-left: 200px;
-  padding-top: 0px;
+  padding-left: 5%;
 }
 
 footer {
@@ -57,9 +65,38 @@ footer {
   color: #343f56;
 }
 
-.tituloproductos {
-  font-weight: 700;
-  padding: 40px;
+#tituloproductos {
+  margin-top: 150px;
+  color: #343f56;
+  font-size: 30px;
+  margin-left: 100px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.producto {
+  font-size: larger;
+}
+
+.shadow {
+  height: 150px;
+  width: 150px;
+}
+
+#titulomarcas {
+  margin-top: 2rem;
+  color: #343f56;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.marca {
+  padding: 1rem;
+}
+
+.marcas {
+  margin: 3rem;
 }
 
 .tituloservicios,
@@ -68,119 +105,149 @@ footer {
   text-align: left;
   font-size: 30px;
   margin-top: 40px;
+  padding-bottom: 20px;
   font-weight: 700;
 }
 
-.imgProductoslinea1,
-.imgProductoslinea2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  text-align: center;
+.iconouno {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: iconouno;
 }
 
-.imgProductoslinea1 {
-  margin-top: 50px;
-  margin-bottom: 20px;
+.itemuno {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: itemuno;
 }
 
-.imgProductoslinea2 {
-  margin-bottom: 30px;
+.iconodos {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: iconodos;
 }
 
-.marcas {
-  padding-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+.itemdos {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: itemdos;
 }
 
-.servicios {
-  margin-top: 200px;
-  margin-left: 50px;
+.iconotres {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: iconotres;
 }
 
-.listadeservicios {
-  margin-bottom: 200px;
-}
-
-.listadeservicios li {
-  padding-top: 40px;
-  padding-bottom: 40px;
+.itemtres {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: itemtres;
 }
 
 .tituloservicios {
-  padding-bottom: 50px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: tituloservicios;
 }
 
-.tituloservicios li {
-  padding-bottom: 100px;
+.servicios {
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-bottom: 12rem;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "tituloservicios tituloservicios" "iconouno itemuno" "iconodos itemdos" "iconotres itemtres";
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+  row-gap: 2rem;
 }
 
 .contacto {
-  margin-top: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  margin-top: 10%;
+}
+
+.iconoTelefono {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: iconotel;
+}
+
+.iconoWsp {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: iconowsp;
+}
+
+.iconoMap {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: iconomap;
+}
+
+.iconoEmail {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: iconomail;
+}
+
+.telefono {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: tel;
+}
+
+.celular {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: cel;
+}
+
+.email {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: mail;
+}
+
+.direccion {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: direccion;
+}
+
+iframe {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: iframe;
 }
 
 .contactanos {
-  width: 400px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "iconotel tel" "iconowsp cel" "iconomail mail" "iconomap direccion" "iframe iframe";
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  row-gap: 3%;
+  -webkit-column-gap: 3%;
+          column-gap: 3%;
+  margin-bottom: 100px;
 }
 
-.contactanos div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-}
-
-legend {
-  text-align: center;
-  font-weight: 700;
-}
-
-fieldset {
-  background-color: #b3c6f0;
-  height: 700px;
-  width: 400px;
-}
-
-label,
-input {
-  height: 30px;
-  width: 400px;
-  margin: 30px 30px 30px 30px;
+.formulario {
+  background-color: #343f56;
+  color: #ffff;
+  font-weight: bold;
+  padding: 2%;
+  border-radius: 2%;
 }
 
 /* MEDIA QUERIS */
@@ -200,6 +267,9 @@ input {
     color: #343f56;
     font-weight: 550;
   }
+  .formulario {
+    width: 90%;
+  }
   footer {
     font-size: 15px;
   }
@@ -218,13 +288,15 @@ input {
   #card {
     margin-top: 8rem;
   }
-  .nav-link, .btn {
+  .nav-link,
+  .btn {
     color: #343f56;
     font-weight: 450;
     -webkit-transition: font-weight 0, 5s;
     transition: font-weight 0, 5s;
   }
-  .nav-link:hover, .btn:hover {
+  .nav-link:hover,
+  .btn:hover {
     font-weight: 700;
   }
   .empresa {
@@ -247,6 +319,9 @@ input {
   .nombresiconos {
     padding-bottom: 10px;
     color: #343f56;
+  }
+  .formulario {
+    width: 60%;
   }
   footer {
     color: #343f56;

@@ -1,7 +1,7 @@
-
 @import url("https://fonts.googleapis.com/css2? family=Barlow+Condensado:ital,wght@0,400;1,500&display=swap");
 
 @import"colores";
+
 * {
     margin: 0;
     padding: 0;
@@ -10,18 +10,21 @@
 nav {
     background-color: #ffff;
 
+    .logoNav {
+        height: 50%;
+        width: 50%;
+    }
 
+    li {
+        padding: 20px;
+    }
 
- li {
-    padding: 20px;
-}
- 
 
 }
 
 
 #titulo {
-   
+
     font-family: 'Barlow Condensado', sans-serif;
     font-weight: bold;
     color: $colorprimario;
@@ -30,17 +33,20 @@ nav {
 
 
 body {
-    background-color:#ffffafc8;
+    background-color: #EAF2E1;
     font-family: 'Barlow Condensado', sans-serif;
 }
+
 .empresa {
     margin-top: 150px;
     margin-bottom: 80px;
 
 }
-h3{
+
+h3 {
     color: $colorprimario
 }
+
 .tituloempresa {
     color: $colorprimario;
 }
@@ -49,9 +55,14 @@ h3{
     width: 14rem;
 }
 
+.producto {
+    padding: 1rem;
+
+}
+
 .contacto {
-    padding-left: 200px;
-    padding-top: 0px;
+    padding-left: 5%;
+
 }
 
 footer {
@@ -66,11 +77,43 @@ footer {
     color: $colorprimario;
 }
 
-
-.tituloproductos {
-    font-weight: 700;
-    padding: 40px;
+#tituloproductos {
+    margin-top: 150px;
+    color: $colorprimario;
+    font-size: 30px;
+    margin-left: 100px;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
+
+.producto {
+    font-size: larger;
+
+}
+
+.shadow {
+    height: 150px;
+    width: 150px;
+}
+
+#titulomarcas {
+    margin-top: 2rem;
+    color: $colorprimario;
+    font-size: 30px;
+
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.marca {
+    padding: 1rem;
+}
+
+.marcas {
+    margin: 3rem;
+}
+
+
 
 .tituloservicios,
 .titulocontactanos {
@@ -78,120 +121,126 @@ footer {
     text-align: left;
     font-size: 30px;
     margin-top: 40px;
+    padding-bottom: 20px;
     font-weight: 700;
 }
 
-.imgProductoslinea1,
-.imgProductoslinea2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
-    text-align: center;
+
+
+.iconouno {
+    grid-area: iconouno;
 }
 
-.imgProductoslinea1 {
-    margin-top: 50px;
-    margin-bottom: 20px;
+.itemuno {
+    grid-area: itemuno;
 }
 
-.imgProductoslinea2 {
-    margin-bottom: 30px;
+.iconodos {
+    grid-area: iconodos;
 }
 
-.marcas {
-    padding-top: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+.itemdos {
+    grid-area: itemdos;
 }
 
-.servicios {
-    margin-top: 200px;
-    margin-left: 50px;
+.iconotres {
+    grid-area: iconotres;
 }
 
-.listadeservicios {
-    margin-bottom: 200px;
-}
-
-.listadeservicios li {
-    padding-top: 40px;
-    padding-bottom: 40px;
+.itemtres {
+    grid-area: itemtres;
 }
 
 .tituloservicios {
-    padding-bottom: 50px;
+    grid-area: tituloservicios;
+
 }
 
-.tituloservicios li {
-    padding-bottom: 100px;
+.servicios {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 12rem;
+    display: grid;
+    grid-template-areas: "tituloservicios tituloservicios"
+        "iconouno itemuno"
+        "iconodos itemdos"
+        "iconotres itemtres";
+    justify-content: start;
+    align-items: center;
+    column-gap: 3rem;
+    row-gap: 2rem;
+
 }
 
 .contacto {
-    margin-top: 200px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    margin-top: 10%;
+
+}
+
+.iconoTelefono {
+    grid-area: iconotel;
+}
+
+.iconoWsp {
+    grid-area: iconowsp;
+}
+
+.iconoMap {
+    grid-area: iconomap;
+}
+
+.iconoEmail {
+    grid-area: iconomail;
+}
+
+.telefono {
+    grid-area: tel;
+}
+
+.celular {
+    grid-area: cel;
+}
+
+.email {
+    grid-area: mail;
+}
+
+.direccion {
+    grid-area: direccion;
+}
+
+iframe {
+    grid-area: iframe;
 }
 
 .contactanos {
-    width: 400px;
-    
-    div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
-}
+    display: grid;
+    grid-template-areas:
+        "iconotel tel"
+        "iconowsp cel"
+        "iconomail mail"
+        "iconomap direccion"
+        "iframe iframe";
+    justify-content: left;
+    row-gap: 3%;
+    column-gap: 3%;
+    margin-bottom: 100px;
+
 }
 
-legend {
-    text-align: center;
-    font-weight: 700;
+.formulario {
+
+    background-color: $colorprimario;
+    color: #ffff;
+    font-weight: bold;
+    padding: 2%;
+    border-radius: 2%;
 }
 
-fieldset {
-    background-color: #b3c6f0;
-    height: 700px;
-    width: 400px;
-}
 
-label,
-input {
-    height: 30px;
-    width: 400px;
-    margin: 30px 30px 30px 30px;
-}
+
+
+
 
 
 /* MEDIA QUERIS */
@@ -205,16 +254,21 @@ input {
         color: $colorprimario;
     }
 
-     .logoFooter {
-      width:50%;
-      height: auto;
-     
-      
- }
- .nav-link{
-    color:$colorprimario;
-    font-weight: 550;
-}
+    .logoFooter {
+        width: 50%;
+        height: auto;
+
+
+    }
+
+    .nav-link {
+        color: $colorprimario;
+        font-weight: 550;
+    }
+
+    .formulario {
+        width: 90%;
+    }
 
     footer {
         font-size: 15px;
@@ -224,8 +278,8 @@ input {
 @media screen and (min-width: 1200px) {
     ul li a {
         font-family: 'Barlow Condensado', sans-serif;
-    
-      
+
+
     }
 
     #titulo {
@@ -241,17 +295,18 @@ input {
     }
 
 
-  .nav-link, .btn {
-         color:$colorprimario;
-         font-weight: 450;
+    .nav-link,
+    .btn {
+        color: $colorprimario;
+        font-weight: 450;
         transition: font-weight 0, 5s;
-        
+
         &:hover {
-         
+
             font-weight: 700;
         }
     }
-        
+
     .empresa {
         margin-top: 200px;
         margin-bottom: 60px;
@@ -260,11 +315,11 @@ input {
 
     .imgempresa {
         height: auto;
-        width:60%;
+        width: 60%;
     }
 
     .iconos {
-  
+
         padding-bottom: 10px;
     }
 
@@ -272,7 +327,7 @@ input {
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
-      
+
     }
 
     .nombresiconos {
@@ -280,8 +335,13 @@ input {
         color: $colorprimario;
     }
 
+
+    .formulario {
+        width: 60%;
+    }
+
     footer {
-        color:$colorprimario;
+        color: $colorprimario;
         background-color: #ffff;
         padding: 10px;
         margin-top: 20px;
