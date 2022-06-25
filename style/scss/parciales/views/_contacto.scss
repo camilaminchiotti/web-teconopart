@@ -1,0 +1,93 @@
+.titulocontactanos {
+    @extend .tituloservicios;
+
+    @media screen and (min-width: 320px) and (max-width:1199px) {
+        margin-top: 170px;
+    }
+}
+
+.contacto {
+    padding-left: 10%;
+    margin-top: 12%;
+
+}
+
+
+
+.iconoTelefono {
+    grid-area: iconotel;
+}
+
+.iconoWsp {
+    grid-area: iconowsp;
+}
+
+.iconoMap {
+    grid-area: iconomap;
+}
+
+.iconoEmail {
+    grid-area: iconomail;
+}
+
+.telefono {
+    grid-area: tel;
+}
+
+.celular {
+    grid-area: cel;
+}
+
+.email {
+    grid-area: mail;
+}
+
+.direccion {
+    grid-area: direccion;
+}
+
+iframe {
+    grid-area: iframe;
+}
+
+.contactanos {
+    display: grid;
+    grid-template-areas:
+        "iconotel tel"
+        "iconowsp cel"
+        "iconomail mail"
+        "iconomap direccion"
+        "iframe iframe";
+    justify-content: left;
+    row-gap: 3%;
+    column-gap: 3%;
+    margin-top: 10px;
+    margin-bottom: 100px;
+
+}
+
+.formulario {
+
+    background-color: map-get($map:$colors, $key: subtitulos);
+    color: map-get($map:$colors, $key: blanco);
+    font-weight: bold;
+    padding: 2%;
+    border-radius: 2%;
+
+    @media screen and (min-width: 320px) and (max-width:1199px) {
+
+
+        width: 90%;
+    }
+
+
+
+    @media screen and (min-width: 1200px) {
+
+        width: 60%;
+    }
+
+    button {
+        margin: 2%;
+    }
+}

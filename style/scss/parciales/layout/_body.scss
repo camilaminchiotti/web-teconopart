@@ -1,0 +1,4 @@
+body {
+    font-family: 'Barlow Condensado', sans-serif;
+    background-color: map-get($map:$colors, $key:background);
+}

@@ -1,0 +1,47 @@
+#tituloproductos {
+    margin-top: 150px;
+    color: map-get($map:$colors, $key:subtitulos);
+    font-size: 30px;
+    margin-left: 100px;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 320px) and (max-width:1199px) {
+        font-size: 20px;
+        margin-left: 50px;
+    }
+}
+
+.producto {
+    padding: 1rem;
+    font-size: larger;
+
+}
+
+.shadow {
+    height: 150px;
+    width: 150px;
+}
+
+
+.marca {
+    padding: 1rem;
+
+    #titulomarcas {
+        margin-top: 2rem;
+        color: map-get($map:$colors, $key:subtitulos);
+        font-size: 30px;
+
+        font-weight: bold;
+        margin-bottom: 1rem;
+
+        @media screen and (min-width: 320px) and (max-width:1199px) {
+            font-size: 20px;
+        }
+    }
+
+
+    .marcas {
+        margin: 3rem;
+    }
+}

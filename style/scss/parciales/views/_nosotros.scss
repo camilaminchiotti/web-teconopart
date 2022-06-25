@@ -1,0 +1,29 @@
+.empresa {
+    margin-top: 200px;
+    margin-bottom: 80px;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 11rem;
+    }
+
+
+    .tituloempresa {
+        font-family: 'Barlow Condensado', sans-serif;
+        color: map-get($map:$colors, $key:subtitulos);
+    }
+
+    .imgempresa {
+        @media screen and (min-width: 1200px) {
+            width: 60%;
+        }
+    }
+}
+
+
+.caracteristicas {
+    width: 14rem;
+
+    h3 {
+        color: map-get($map:$colors, $key:subtitulos);
+    }
+}

@@ -1,0 +1,54 @@
+.tituloservicios {
+    color: map-get($map:$colors, $key:subtitulos);
+    font-size: 30px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    grid-area: tituloservicios;
+
+    @media screen and (min-width: 320px) and (max-width:1199px) {
+        margin-top: 150px;
+    }
+}
+
+
+.iconouno {
+    grid-area: iconouno;
+}
+
+.itemuno {
+    grid-area: itemuno;
+}
+
+.iconodos {
+    grid-area: iconodos;
+}
+
+.itemdos {
+    grid-area: itemdos;
+}
+
+.iconotres {
+    grid-area: iconotres;
+}
+
+.itemtres {
+    grid-area: itemtres;
+}
+
+
+.servicios {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 12rem;
+    display: grid;
+    grid-template-areas: "tituloservicios tituloservicios"
+        "iconouno itemuno"
+        "iconodos itemdos"
+        "iconotres itemtres";
+    justify-content: start;
+    align-items: center;
+    column-gap: 3rem;
+    row-gap: 2rem;
+
+}

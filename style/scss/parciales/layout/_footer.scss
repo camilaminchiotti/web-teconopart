@@ -1,0 +1,15 @@
+ footer {
+     color: map-get($map:$colors, $key:subtitulos);
+     padding: 10px;
+     background-color: #ffff;
+     margin-top: 20px;
+
+     @media screen and (min-width: 320px) and (max-width:1199px) {
+         font-size: 15px;
+
+         .logoFooter {
+             width: 50%;
+             height: auto;
+         }
+     }
+ }

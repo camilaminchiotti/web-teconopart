@@ -1,0 +1,21 @@
+nav {
+  background-color: map-get($map:$colors, $key:blanco);
+
+  .logoNav {
+    height: 50%;
+    width: 50%;
+  }
+
+  .nav-item {
+    padding: 20px;
+    color: map-get($map:$colors, $key:blanco);
+    font-weight: 550;
+    transition: font-weight 0, 5s;
+
+    &:hover {
+
+      font-weight: 800;
+    }
+
+  }
+}
