@@ -13,8 +13,7 @@
 
     @media screen and (min-width: 1200px) {
         font-size: 3rem;
-        margin-top: 12rem;
-        margin-left: 9rem;
+        @include margins (12rem, 9rem);
         margin-right: 9rem;
 
     }

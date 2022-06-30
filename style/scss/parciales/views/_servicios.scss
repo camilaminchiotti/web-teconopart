@@ -38,8 +38,7 @@
 
 
 .servicios {
-    margin-top: 10%;
-    margin-left: 10%;
+    @include margins(10%, 10%);
     margin-bottom: 12rem;
     display: grid;
     grid-template-areas: "tituloservicios tituloservicios"

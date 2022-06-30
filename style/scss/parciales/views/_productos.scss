@@ -1,8 +1,7 @@
 #tituloproductos {
-    margin-top: 150px;
+    @include margins (150px, 100px);
     color: map-get($map:$colors, $key:subtitulos);
     font-size: 30px;
-    margin-left: 100px;
     font-weight: bold;
     margin-bottom: 30px;
 
@@ -24,14 +23,14 @@
 }
 
 
-.marca {
-    padding: 1rem;
+.marcas {
+    margin: 3rem;}
 
+    
     #titulomarcas {
         margin-top: 2rem;
         color: map-get($map:$colors, $key:subtitulos);
-        font-size: 30px;
-
+        font-size: 30px; 
         font-weight: bold;
         margin-bottom: 1rem;
 
@@ -39,9 +38,9 @@
             font-size: 20px;
         }
     }
+    
+    
+    .marca {
+        padding: 1rem;
 
-
-    .marcas {
-        margin: 3rem;
-    }
 }
