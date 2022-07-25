@@ -3,31 +3,34 @@ nav {
 
 
   .logoNav {
-      @media screen and (min-width:1200px){
-    height: 50%;
-    width: 90%;
-   padding: 10px 200px 10px 20px; 
+    @media screen and (min-width:1200px) {
+      height: 50%;
+      width: 90%;
+      padding: 10px 200px 10px 20px;
 
+    }
+
+    @media screen and (min-width: 320px) and (max-width:1199px) {
+      height: 50%;
+      width: 60%;
+      padding-left: 10px;
+    }
   }
-   @media screen and (min-width: 320px) and (max-width:1199px) {
-    height:50%;
-    width: 60%;
-    padding-left: 10px;
-}}
 
   .nav-item {
-    
-      padding-left: 10px;
-    
-    @media screen and (min-width:1200px){
-       padding: 20px;
-     
-     
+
+    padding-left: 10px;
+
+    @media screen and (min-width:1200px) {
+      padding: 20px;
+
+
     }
-    
+
     color: map-get($map:$colors, $key:blanco);
     font-weight: 550;
-    transition: font-weight 0, 5s;
+    transition: font-weight 0,
+    5s;
 
     &:hover {
 

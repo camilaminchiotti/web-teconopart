@@ -1,6 +1,6 @@
 #tituloproductos {
     @include margins (150px, 100px);
-      font-family:'Teko', sans-serif;
+    font-family: 'Teko', sans-serif;
     color: map-get($map:$colors, $key:subtitulos);
     font-size: 30px;
     font-weight: bold;
@@ -27,26 +27,29 @@
 .marcas {
     margin: 3rem;
 
-    
+
     #titulomarcas {
         margin-top: 2rem;
-          font-family:'Teko', sans-serif;
+        font-family: 'Teko', sans-serif;
         color: map-get($map:$colors, $key:subtitulos);
-        font-size: 30px; 
+        font-size: 30px;
         font-weight: bold;
         margin-bottom: 1rem;
 
         @media screen and (min-width: 320px) and (max-width:1199px) {
             font-size: 20px;
-        }}
-    #logoMarcas{
-@media screen and (min-width: 320px) and (max-width:1199px) {
-    height: 50%;
-    width: 100%;
-    }    
-}
-    
+        }
+    }
+
+    #logoMarcas {
+        @media screen and (min-width: 320px) and (max-width:1199px) {
+            height: 50%;
+            width: 100%;
+        }
+    }
+
 
     .marca {
         padding: 1rem;
-    }}
+    }
+}

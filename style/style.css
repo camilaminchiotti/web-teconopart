@@ -56,8 +56,8 @@ nav .nav-item {
   padding-left: 10px;
   color: #ffff;
   font-weight: 550;
-  -webkit-transition: font-weight 0, 5s;
-  transition: font-weight 0, 5s;
+  -webkit-transition: font-weight 0, 5s;
+  transition: font-weight 0, 5s;
 }
 
 @media screen and (min-width: 1200px) {
