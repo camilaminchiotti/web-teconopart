@@ -27,7 +27,7 @@ footer {
     font-size: 10px;
   }
   footer .logoFooter {
-    width: 50%;
+    width: 40%;
     height: auto;
   }
 }
@@ -37,7 +37,7 @@ nav {
 }
 
 @media screen and (min-width: 1200px) {
-  .logoNav {
+  nav .logoNav {
     height: 50%;
     width: 90%;
     padding: 10px 200px 10px 20px;
@@ -45,14 +45,14 @@ nav {
 }
 
 @media screen and (min-width: 320px) and (max-width: 1199px) {
-  .logoNav {
+  nav .logoNav {
     height: 50%;
     width: 60%;
     padding-left: 10px;
   }
 }
 
-.nav-item {
+nav .nav-item {
   padding-left: 10px;
   color: #ffff;
   font-weight: 550;
@@ -61,12 +61,12 @@ nav {
 }
 
 @media screen and (min-width: 1200px) {
-  .nav-item {
+  nav .nav-item {
     padding: 20px;
   }
 }
 
-.nav-item:hover {
+nav .nav-item:hover {
   font-weight: 800;
 }
 
@@ -146,7 +146,7 @@ nav {
 @media screen and (min-width: 320px) and (max-width: 1199px) {
   #boton {
     font-size: 15px;
-    margin: 0px 0px 5% 35%;
+    margin: 0px 0px 5% 38%;
   }
 }
 
@@ -193,12 +193,12 @@ nav {
   padding: 3%;
 }
 
-.caracteristicas {
+#section2 .caracteristicas {
   font-size: 20px;
   width: 14rem;
 }
 
-.caracteristicas h3 {
+#section2 .caracteristicas h3 {
   font-family: 'Teko', sans-serif;
   color: #343f56;
 }
@@ -260,62 +260,6 @@ nav {
   padding: 1rem;
 }
 
-.tituloservicios, .titulocontactanos {
-  font-family: 'Teko', sans-serif;
-  color: #343f56;
-  font-size: 30px;
-  margin-top: 40px;
-  padding-bottom: 20px;
-  font-weight: 500;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: tituloservicios;
-}
-
-@media screen and (min-width: 320px) and (max-width: 1199px) {
-  .tituloservicios, .titulocontactanos {
-    margin-top: 100px;
-    margin-left: 10px;
-  }
-}
-
-.iconouno {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: iconouno;
-}
-
-.itemuno {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: itemuno;
-}
-
-.iconodos {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: iconodos;
-}
-
-.itemdos {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: itemdos;
-}
-
-.iconotres {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: iconotres;
-}
-
-.itemtres {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-  grid-area: itemtres;
-}
-
 .servicios {
   grid-area: servicios;
   margin-left: 10px;
@@ -343,6 +287,62 @@ nav {
   .servicios {
     margin-bottom: 12rem;
   }
+}
+
+.servicios .tituloservicios, .servicios .contacto .titulocontactanos, .contacto .servicios .titulocontactanos {
+  font-family: 'Teko', sans-serif;
+  color: #343f56;
+  font-size: 30px;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  font-weight: 500;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: tituloservicios;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .servicios .tituloservicios, .servicios .contacto .titulocontactanos, .contacto .servicios .titulocontactanos {
+    margin-top: 100px;
+    margin-left: 10px;
+  }
+}
+
+.servicios .iconouno {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: iconouno;
+}
+
+.servicios .itemuno {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: itemuno;
+}
+
+.servicios .iconodos {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: iconodos;
+}
+
+.servicios .itemdos {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: itemdos;
+}
+
+.servicios .iconotres {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: iconotres;
+}
+
+.servicios .itemtres {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: itemtres;
 }
 
 #catalogo {
@@ -389,73 +389,18 @@ nav {
           align-items: flex-start;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1199px) {
-  .titulocontactanos {
-    margin-top: 100px;
-  }
-}
-
 .contacto {
   padding-left: 10%;
   margin-top: 12%;
 }
 
-.iconoTelefono {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: iconotel;
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .contacto .titulocontactanos {
+    margin-top: 100px;
+  }
 }
 
-.iconoWsp {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: iconowsp;
-}
-
-.iconoMap {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: iconomap;
-}
-
-.iconoEmail {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: iconomail;
-}
-
-.telefono {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: tel;
-}
-
-.celular {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: cel;
-}
-
-.email {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: mail;
-}
-
-.direccion {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-  grid-area: direccion;
-}
-
-iframe {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: iframe;
-}
-
-.contactanos {
+.contacto .contactanos {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "iconotel tel" "iconowsp cel" "iconomail mail" "iconomap direccion" "iframe iframe";
@@ -469,7 +414,62 @@ iframe {
   margin-bottom: 100px;
 }
 
-.formulario {
+.contacto .contactanos .iconoTelefono {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: iconotel;
+}
+
+.contacto .contactanos .iconoWsp {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: iconowsp;
+}
+
+.contacto .contactanos .iconoMap {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: iconomap;
+}
+
+.contacto .contactanos .iconoEmail {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: iconomail;
+}
+
+.contacto .contactanos .telefono {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: tel;
+}
+
+.contacto .contactanos .celular {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: cel;
+}
+
+.contacto .contactanos .email {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: mail;
+}
+
+.contacto .contactanos .direccion {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: direccion;
+}
+
+.contacto .contactanos iframe {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: iframe;
+}
+
+.contacto .formulario {
   background-color: #343f56;
   color: #ffff;
   font-weight: bold;
@@ -478,18 +478,18 @@ iframe {
 }
 
 @media screen and (min-width: 320px) and (max-width: 1199px) {
-  .formulario {
+  .contacto .formulario {
     width: 90%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .formulario {
+  .contacto .formulario {
     width: 60%;
   }
 }
 
-.formulario button {
+.contacto .formulario button {
   margin: 2%;
 }
 

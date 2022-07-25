@@ -1,6 +1,6 @@
 nav {
   background-color: map-get($map:$colors, $key:blanco);
-}
+
 
   .logoNav {
       @media screen and (min-width:1200px){
@@ -35,3 +35,4 @@ nav {
     }
 
   }
+}

@@ -1,20 +1,35 @@
-.titulocontactanos {
-    @extend .tituloservicios;
-
-    @media screen and (min-width: 320px) and (max-width:1199px) {
-        margin-top: 100px;
-    }
-}
-
 .contacto {
     padding-left: 10%;
     margin-top: 12%;
 
-}
-
-
-
-.iconoTelefono {
+    
+    .titulocontactanos {
+        @extend .tituloservicios;
+        
+        @media screen and (min-width: 320px) and (max-width:1199px) {
+            margin-top: 100px;
+        }
+    }
+    
+    
+    
+    
+    .contactanos {
+        display: grid;
+        grid-template-areas:
+            "iconotel tel"
+            "iconowsp cel"
+            "iconomail mail"
+            "iconomap direccion"
+            "iframe iframe";
+        justify-content: left;
+        row-gap: 3%;
+        column-gap: 3%;
+        margin-top: 10px;
+        margin-bottom: 100px;
+    
+    
+    .iconoTelefono {
     grid-area: iconotel;
 }
 
@@ -49,22 +64,7 @@
 iframe {
     grid-area: iframe;
 }
-
-.contactanos {
-    display: grid;
-    grid-template-areas:
-        "iconotel tel"
-        "iconowsp cel"
-        "iconomail mail"
-        "iconomap direccion"
-        "iframe iframe";
-    justify-content: left;
-    row-gap: 3%;
-    column-gap: 3%;
-    margin-top: 10px;
-    margin-bottom: 100px;
-
-}
+    }
 
 .formulario {
 
@@ -90,4 +90,4 @@ iframe {
     button {
         margin: 2%;
     }
-}
+}}
